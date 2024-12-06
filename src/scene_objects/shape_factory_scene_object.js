@@ -1,7 +1,7 @@
 import { Drawable_Scene_Object } from "./drawable_scene_object.js";
 // import { VERTEX_SHADER_SRC as sized_vertex_source } from "../shaders/sized_diffuse_vertex_shader.js"
 import { FRAGMENT_SHADER_SRC as sized_fragment_source } from "../shaders/sized_diffuse_fragment_shader.js";
-import { Shape_Factory } from "../shape_factory.js";
+import { Shape_Factory } from "../util/shape_factory.js";
 import { Vertex_Shader_Builder } from "../shader_util/vertex_shader_builder.js";
 
 export class Shape_Factory_Scene_Object extends Drawable_Scene_Object {
