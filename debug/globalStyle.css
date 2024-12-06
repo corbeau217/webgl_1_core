@@ -1,0 +1,85 @@
+
+
+/* ===== GLOBAL ===== */
+* {
+    font-family: monospace;
+    color: #ffb570;
+    text-shadow: 2px 2px 2px #2a1c0f;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: #e89b53;
+}
+html {
+    background: #0b2c5b;
+}
+img {
+    box-shadow: 5px 5px 3px #1f1f1f;
+}
+
+hr {
+    color: #9b612a;
+}
+
+
+/* ===== BODY SECTION ===== */
+body:not(.body_hiding_style) {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 15% auto auto auto;
+}
+.body_hiding_style{
+    display:inherit;
+}
+
+/* ===== PAGE HEADER TREE ===== */
+header:not(.header_hidden) {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    border-bottom: 2px solid #c1d4ed;
+    overflow:hidden;
+    content: unset;
+}
+.header_hidden {
+    display: none;
+}
+.top_header_logo {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    grid-column: 1 / span 1;
+}
+.top_header_logo_img {
+    max-height: 100%;
+}
+#top_header_text {
+    padding: 5px;
+    grid-column: 2 / span 2;
+    text-align: center;
+    display: block;
+}
+
+/* MOVED NAV MENU SYLE TO NEW SHEET */
+
+/* MOVED SECTIONS STYLE TO NEW SHEET */
+
+/* MOVED QUOTES STYLE TO NEW SHEET */
+
+
+/* ===== FOOTER ===== */
+footer:not(.footer_hidden){
+    grid-column: 1 / span 4;
+    border-top: 2px solid #c1d4ed;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.footer_hidden {
+    display: none;
+}
+.footer_section {
+    margin: 5px;
+}

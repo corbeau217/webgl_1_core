@@ -1,0 +1,81 @@
+
+li {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+.webgl_techdemo_container {
+    margin-left: 2em;
+    display: block;
+}
+.sectioned_content_thumbnail {
+    max-width: 100px;
+}
+.sectioned_content_outer:not(.section_hidden) {
+    max-width: 100%;
+}
+.sectioned_content_body {
+    display: block;
+}
+#webgl_canvas_primary {
+    display: block;
+}
+
+
+
+
+
+/* ======= source code showing ======= */
+.shader_source_line:before {
+    color: #2a3646;
+    width: 2em;
+    text-align: right;
+    display: inline-block;
+    scroll-padding-left: 1em;
+    padding-left: 1em;
+    margin-right: 1em;
+    flex: 0 0 auto;
+
+    font-family: monospace;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #140d07;
+
+    counter-increment: line;
+    /* content: counter(line); */
+    content: counter(line) ". ";
+
+    border-right: 2px solid #2b3644;
+}
+.glsl_source_code_block {
+    counter-reset: line;
+    background-color: #061425;
+    font-size: 0.8em;
+    box-shadow: 5px 5px 3px #1f1f1f;
+    padding-top: 1em;
+    padding-right: 1em;
+    margin: 1em;
+
+    max-height: 400px;
+    /* max-width: 700px; */
+    text-wrap: nowrap;
+
+    overflow: scroll;
+    overflow-x: scroll;
+    
+}
+.shader_source_line {
+    white-space-collapse: preserve;
+}
+
+.shader_source_comment_line {
+    color: #3e7e48;
+}
+
+.shader_source_uniform_line:not(.shader_source_comment_line) {
+    color: #aa6ae5;
+}
+.shader_source_varying_line:not(.shader_source_comment_line) {
+    color: #7faff2;
+}
+.shader_source_function_header_line:not(.shader_source_comment_line) {
+    color: #ffb570;
+}
